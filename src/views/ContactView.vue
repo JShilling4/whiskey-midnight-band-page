@@ -26,8 +26,6 @@
 
           <AppButton type="submit" class="primary">Send Message</AppButton>
         </form>
-
-        <!-- <img src="@/assets/images/contact_vector.svg" alt="" /> -->
       </div>
     </div>
   </div>
@@ -87,10 +85,6 @@ h2 {
     @media screen and (max-width: 556px) {
       width: 100%;
     }
-
-    /* @media screen and (max-width: 430px) {
-      padding: 2rem 4rem;
-    } */
   }
 
   img {

@@ -35,7 +35,7 @@ a {
   width: var(--wrapper-width);
   margin: 3rem auto 0;
   color: #fff;
-  padding: 0 4rem 4rem;
+  padding: 2rem 4rem 4rem;
 
   @media screen and (max-width: 768px) {
     margin-top: 3rem;

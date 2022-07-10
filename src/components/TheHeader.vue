@@ -85,6 +85,10 @@ function toggleMenu(): void {
   height: 70px;
   margin: 0 auto;
   background-color: var(--banner-color);
+
+  @media screen and (max-width: 430px) {
+    height: 60px;
+  }
 }
 
 .logo {
@@ -101,6 +105,10 @@ function toggleMenu(): void {
 
   &__text {
     font-size: 2.5rem;
+
+    @media screen and (max-width: 430px) {
+      font-size: 2rem;
+    }
 
     .txt-white {
       background: var(--text-gradient-primary);
@@ -192,6 +200,7 @@ nav {
   display: none;
   position: absolute;
   right: 2rem;
+  opacity: 0.8;
   font-size: 2rem;
   color: var(--color-primary);
 
@@ -201,6 +210,7 @@ nav {
 
   @media screen and (max-width: 430px) {
     right: 15px;
+    font-size: 1.5rem;
   }
 }
 </style>

@@ -29,7 +29,7 @@ button {
   border: 2px solid var(--color-secondary);
   color: var(--color-primary);
   outline: none;
-  min-width: 12rem;
+  min-width: 11rem;
   border-radius: 10px;
   letter-spacing: 1px;
   font-size: 1.1rem;
@@ -39,7 +39,7 @@ button {
 
   @media screen and (max-width: 556px) {
     font-size: 1rem;
-    min-width: 12rem;
+    min-width: 10rem;
   }
 
   &:hover {

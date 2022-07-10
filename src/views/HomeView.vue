@@ -25,7 +25,6 @@
   margin: 0 auto;
   z-index: 1;
   height: 930px;
-  /* background-image: url("@/assets/images/IMG_3438.JPG"); */
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)),
     url("@/assets/images/IMG_3438.JPG");
   background-size: cover;
@@ -54,7 +53,7 @@
   text-align: center;
   color: #fff;
   opacity: 1;
-  font-size: 60px;
+  font-size: 68px;
   font-weight: 400;
   z-index: 99999999;
 
@@ -66,13 +65,12 @@
     font-family: "Yesteryear";
     position: relative;
     bottom: 40px;
-    font-size: 6rem;
+    font-size: 7rem;
     color: var(--orange);
     background: linear-gradient(#ebae58, var(--orange), var(--orange));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    /* text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.2); */
 
     @media screen and (max-width: 430px) {
       font-size: 4rem;

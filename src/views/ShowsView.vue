@@ -10,6 +10,7 @@
             <th>Venue</th>
             <th>Time</th>
             <th>Location</th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
@@ -22,9 +23,24 @@
                 </div>
               </div>
             </td>
-            <td class="venue-name"><a href="">Bar 13</a></td>
+            <td class="venue-name">
+              <a
+                href="https://www.facebook.com/bar13Pierceton"
+                target="_blank"
+                referrerpolicy="no-referrer"
+                >Bar 13</a
+              >
+            </td>
             <td>8-11pm</td>
             <td>Pierceton, IN</td>
+            <td>
+              <a
+                href="https://www.facebook.com/events/568412051390453/?ref=newsfeed"
+                target="_blank"
+                referrerpolicy="no-referrer"
+                ><i class="fab fa-facebook"></i
+              ></a>
+            </td>
           </tr>
 
           <tr>
@@ -37,12 +53,23 @@
               </div>
             </td>
             <td class="venue-name">
-              <a href="https://www.facebook.com/lakelifebarandgrill"
+              <a
+                href="https://www.facebook.com/lakelifebarandgrill"
+                target="_blank"
+                referrerpolicy="no-referrer"
                 >Lakelife Bar & Grill</a
               >
             </td>
             <td>7-10pm</td>
             <td>Warsaw, IN</td>
+            <td>
+              <a
+                href="https://www.facebook.com/events/345714774392893?acontext=%7B%22event_action_history%22%3A[%7B%22surface%22%3A%22page%22%7D]%7D"
+                target="_blank"
+                referrerpolicy="no-referrer"
+                ><i class="fab fa-facebook"></i
+              ></a>
+            </td>
           </tr>
         </tbody>
       </table>
@@ -59,10 +86,14 @@ import PageHeading from "@/components/PageHeading.vue";
   display: flex;
   justify-content: center;
   overflow-x: auto;
-
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("@/assets/images/band-setup.jpg");
+  background-size: cover;
+  background-position: center center;
+  padding: 0 3rem 12rem;
   .shows-table {
     border-collapse: collapse;
-    margin-top: 5rem;
+    margin-top: 4rem;
     text-align: left;
     width: 100%;
 
@@ -81,7 +112,7 @@ import PageHeading from "@/components/PageHeading.vue";
     td {
       font-weight: 200;
       font-size: 18px;
-      padding: 0.5rem 0;
+      padding: 1rem 0;
       border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 
       &.center {
