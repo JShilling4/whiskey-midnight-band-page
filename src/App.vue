@@ -33,15 +33,18 @@ a {
 
 .page-wrapper {
   width: var(--wrapper-width);
-  margin: 6rem auto 0;
+  margin: 3rem auto 0;
   color: #fff;
-  padding: 0 4rem 8rem;
+  padding: 0 4rem 4rem;
 
   @media screen and (max-width: 768px) {
     margin-top: 3rem;
   }
+  @media screen and (max-width: 556px) {
+    padding: 0 2rem 4rem;
+  }
   @media screen and (max-width: 430px) {
-    padding: 0 1rem;
+    padding: 0 1.5rem 4rem;
   }
 }
 

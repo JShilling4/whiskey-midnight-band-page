@@ -21,13 +21,15 @@
   display: flex;
   align-items: flex-end;
   position: relative;
-  width: var(--wrapper-width);
+  width: 100%;
   margin: 0 auto;
   z-index: 1;
-  height: 844px;
-  background-image: url("@/assets/images/j-wes1-shopped3.jpg");
-  background-size: contain;
-  background-position: center -20px;
+  height: 930px;
+  /* background-image: url("@/assets/images/IMG_3438.JPG"); */
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)),
+    url("@/assets/images/IMG_3438.JPG");
+  background-size: cover;
+  background-position: center -100px;
   background-repeat: no-repeat;
 
   @media screen and (max-width: 1024px) {
@@ -66,7 +68,11 @@
     bottom: 40px;
     font-size: 6rem;
     color: var(--orange);
-    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.2);
+    background: linear-gradient(#ebae58, var(--orange), var(--orange));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.2); */
 
     @media screen and (max-width: 430px) {
       font-size: 4rem;
@@ -79,7 +85,7 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: -4px;
-    margin-top: -3.75rem;
+    margin-top: -4rem;
     margin-left: -14px;
 
     @media screen and (max-width: 430px) {
@@ -89,15 +95,15 @@
 }
 
 .copy-banner {
-  width: var(--wrapper-width);
-  margin: -12rem auto 0;
+  width: 100%;
+  margin: -8.9rem auto 0;
   position: relative;
   z-index: 200;
-  min-height: 12rem;
+  min-height: 9rem;
   background-color: var(--banner-color);
-  padding: 2rem 3rem;
+  padding: 1rem 3rem;
   text-align: center;
-  line-height: 1.5;
+  line-height: 1.75;
   font-weight: 300;
   border-top: 3px solid var(--color-secondary);
 
@@ -118,12 +124,12 @@
 }
 
 p {
-  width: 100%;
+  width: var(--wrapper-width);
   color: var(--color-primary);
   color: rgba(255, 255, 255, 0.605);
   margin: 0 auto;
   font-size: 17px;
-  font-weight: 400;
+  font-weight: 300;
   @media screen and (max-width: 430px) {
     font-weight: 300;
   }

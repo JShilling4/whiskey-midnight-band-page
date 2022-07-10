@@ -14,6 +14,7 @@ h1 {
   color: rgba(255, 255, 255, 0.8);
   letter-spacing: 1px;
   font-size: 38px;
+  margin-bottom: 3rem;
 
   @media screen and (max-width: 768px) {
     font-size: 30px;

@@ -29,11 +29,11 @@ button {
   border: 2px solid var(--color-secondary);
   color: var(--color-primary);
   outline: none;
-  min-width: 15rem;
-  border-radius: 2rem;
+  min-width: 12rem;
+  border-radius: 10px;
   letter-spacing: 1px;
-  font-size: 1.3rem;
-  font-weight: 500;
+  font-size: 1.1rem;
+  font-weight: 400;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s, letter-spacing 0.3s;
 

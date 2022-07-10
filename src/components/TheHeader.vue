@@ -3,7 +3,10 @@
     <nav class="wrapper">
       <RouterLink class="logo" to="/">
         <!-- <img class="logo" src="@/assets/images/logo.png" alt="" /> -->
-        <span class="logo__text"><span class="txt-orange">W</span>M</span>
+        <span class="logo__text"
+          ><span class="txt-orange">W</span
+          ><span class="txt-white">M</span></span
+        >
       </RouterLink>
       <ul v-if="showMenu" class="navlink-container">
         <li class="navlink">
@@ -73,25 +76,21 @@ function toggleMenu(): void {
 .outer-wrapper {
   background-color: var(--banner-color);
   border-bottom: 3px solid var(--color-secondary);
-  /* border-bottom: 3px solid #fff; */
 }
 
 .wrapper {
   position: relative;
-  width: var(--wrapper-width);
+  width: 100%;
   z-index: 100;
-  height: 90px;
+  height: 70px;
   margin: 0 auto;
-  /* background-color: rgb(21, 21, 21); */
   background-color: var(--banner-color);
-  /* border-bottom: 1px solid var(--secondary-color); */
 }
 
 .logo {
   position: absolute;
-  top: 20px;
+  top: 7px;
   left: 20px;
-  font-size: 30px;
   color: #fff;
   opacity: 1;
   padding: 5px 10px;
@@ -102,6 +101,13 @@ function toggleMenu(): void {
 
   &__text {
     font-size: 2.5rem;
+
+    .txt-white {
+      background: var(--text-gradient-primary);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
 }
 
@@ -120,7 +126,7 @@ nav {
 
   @media screen and (max-width: 768px) {
     position: absolute;
-    top: 5.8rem;
+    top: 4.55rem;
     background-color: var(--banner-color);
     right: 0;
     padding: 1rem 0;
@@ -133,7 +139,7 @@ nav {
     position: relative;
     height: 100%;
     letter-spacing: 2px;
-    font-weight: 500;
+    font-weight: 300;
     font-size: 17px;
     text-align: right;
 
@@ -147,6 +153,7 @@ nav {
       opacity: 0.7;
       color: var(--color-primary);
       transition: opacity 0.3s;
+
       @media screen and (max-width: 768px) {
         padding: 15px 35px;
       }
