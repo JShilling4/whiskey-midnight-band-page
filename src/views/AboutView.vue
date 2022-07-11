@@ -44,13 +44,13 @@
             Your going to get down to some outlaw country from the likes of
             Waylon Jennings, Johnny Cash & more. You'll be singing & dancing to
             classic rock from The Allman Brothers, Tom Petty, CCR, Skynyrd & The
-            Doobie Brothers. You'll get some alternative & grunge from the 90's
-            from Stone Temple Pilots, Sublime, Red Hot Chili Peppers & Bush.
-            They'll bring up the energy level with some hard rock from artists
-            like Staind & Metallica. When it's time to relax with a drink you'll
-            get some blues from Hendrix, John Mayer & SRV. They have also been
-            known to bust out acoustic guitars and jam on some Jim Croce, Billy
-            Joel & Eric Church. To sum up, you're going to get some variety!
+            Doobie Brothers. You'll get some nostalgic 90's era alternative from
+            Stone Temple Pilots, Sublime, Red Hot Chili Peppers & Bush. They'll
+            kick up the energy level with some hard rock from artists like
+            Staind & Metallica. When it's time to relax with a drink you'll get
+            some blues from Hendrix, John Mayer & SRV. They have also been known
+            to bust out acoustic guitars and jam on some Jim Croce, Billy Joel &
+            Eric Church. To sum up, you're going to get some variety!
           </p>
         </div>
       </div>
