@@ -26,7 +26,7 @@ input {
   background-color: var(--input-bg-color);
   color: var(--color-secondary);
   font-weight: 700;
-  font-size: 1.6rem;
+  font-size: 16px;
   padding-left: 1rem;
   border: 3px solid var(--color-secondary);
 

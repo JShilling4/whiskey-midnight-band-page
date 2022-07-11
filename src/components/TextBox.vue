@@ -28,9 +28,6 @@ textarea {
   color: var(--color-secondary);
   border: 2px solid var(--color-secondary);
   outline: none;
-  font-size: 1.6rem;
-  /* &:focus {
-    box-shadow: var(--input-focus-shadow);
-  } */
+  font-size: 16px;
 }
 </style>
