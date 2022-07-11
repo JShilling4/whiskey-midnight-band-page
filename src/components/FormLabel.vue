@@ -25,7 +25,7 @@ withDefaults(defineProps<Props>(), {
 label {
   font-family: Roboto, sans-serif;
   color: var(--color-primary);
-  color: white;
+  /* color: white; */
   font-weight: 300;
   font-size: 18px;
   margin-left: 10px;

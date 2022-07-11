@@ -19,5 +19,8 @@ h1 {
   @media screen and (max-width: 768px) {
     font-size: 30px;
   }
+  @media screen and (max-width: 430px) {
+    margin-bottom: 2rem;
+  }
 }
 </style>

@@ -64,9 +64,13 @@ import PageHeading from "@/components/PageHeading.vue";
 
 <style lang="scss" scoped>
 .top-copy {
-  line-height: 1.75;
+  line-height: 2;
   font-weight: 300;
   margin-bottom: 3rem;
+
+  @media screen and (max-width: 430px) {
+    margin-bottom: 1rem;
+  }
 }
 .hero-container {
   float: left;
@@ -80,12 +84,17 @@ import PageHeading from "@/components/PageHeading.vue";
   @media screen and (max-width: 768px) {
     float: none;
     height: initial;
+    margin: 0;
   }
 }
 .copy-container {
   margin-top: 3rem;
   font-size: 17px;
   line-height: 1.5;
+
+  @media screen and (max-width: 430px) {
+    margin-top: 1rem;
+  }
 
   .point {
     margin-bottom: 3rem;
@@ -100,7 +109,7 @@ import PageHeading from "@/components/PageHeading.vue";
     }
 
     .answer {
-      font-weight: 200;
+      font-weight: 300;
       line-height: 1.75;
     }
   }

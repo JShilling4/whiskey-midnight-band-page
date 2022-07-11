@@ -2,12 +2,14 @@
   <div class="body-wrapper">
     <TheHeader />
     <RouterView />
+    <TheFooter />
   </div>
 </template>
 
 <script setup lang="ts">
-import { RouterView } from "vue-router";
 import TheHeader from "@/components/TheHeader.vue";
+import TheFooter from "@/components/TheFooter.vue";
+import { RouterView } from "vue-router";
 </script>
 
 <style lang="scss">
@@ -35,7 +37,7 @@ a {
   width: var(--wrapper-width);
   margin: 3rem auto 0;
   color: #fff;
-  padding: 2rem 4rem 4rem;
+  padding: 4rem 4rem 6rem;
 
   @media screen and (max-width: 768px) {
     margin-top: 3rem;
@@ -44,7 +46,7 @@ a {
     padding: 0 2rem 4rem;
   }
   @media screen and (max-width: 430px) {
-    padding: 0 1.5rem 4rem;
+    padding: 0 1.5rem 2rem;
   }
 }
 
@@ -56,5 +58,57 @@ a {
     var(--bg-primary)
   );
   background-size: cover;
+}
+
+.navlink {
+  position: relative;
+  height: 100%;
+  letter-spacing: 2px;
+  font-weight: 300;
+  font-size: 17px;
+  text-align: right;
+  cursor: pointer;
+
+  &:hover a {
+    opacity: 1;
+  }
+
+  a {
+    display: inline-block;
+    padding: 10px 35px;
+    opacity: 0.7;
+    color: var(--color-primary);
+    transition: opacity 0.3s;
+
+    @media screen and (max-width: 768px) {
+      padding: 15px 35px;
+    }
+    @media screen and (max-width: 430px) {
+      padding: 15px 15px;
+    }
+  }
+
+  &.fb {
+    font-size: 25px;
+  }
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-primary) var(--banner-color);
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--banner-color);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary);
+  outline: 1px solid slategrey;
+  border-radius: 10px;
 }
 </style>

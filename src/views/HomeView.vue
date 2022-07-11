@@ -14,7 +14,20 @@
       hit the dance floor, Whiskey Midnight has a great show planned for you.
     </p>
   </div>
+
+  <div id="aboutSection">
+    <AboutView />
+  </div>
+
+  <div id="showsSection">
+    <ShowsView />
+  </div>
 </template>
+
+<script setup lang="ts">
+import AboutView from "@/views/AboutView.vue";
+import ShowsView from "@/views/ShowsView.vue";
+</script>
 
 <style lang="scss" scoped>
 .wrapper {
@@ -24,20 +37,27 @@
   width: 100%;
   margin: 0 auto;
   z-index: 1;
-  height: 930px;
+  height: 900px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)),
     url("@/assets/images/IMG_3438.JPG");
   background-size: cover;
-  background-position: center -100px;
+  background-position: center -50px;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 
   @media screen and (max-width: 1024px) {
-    height: 800px;
+    height: 950px;
     background-size: cover;
   }
 
-  @media screen and (max-width: 430px) {
-    height: 700px;
+  @media screen and (max-width: 768px) {
+    height: 900px;
+    background-attachment: scroll;
+  }
+
+  @media screen and (max-width: 556px) {
+    height: 715px;
+    background-position: center center;
   }
 
   @media screen and (max-width: 430px) {
@@ -48,7 +68,7 @@
 .band-name {
   position: absolute;
   top: 8rem;
-  left: 54%;
+  left: 53%;
   transform: translateX(-50%);
   text-align: center;
   color: #fff;
@@ -57,8 +77,14 @@
   font-weight: 400;
   z-index: 99999999;
 
-  @media screen and (max-width: 430px) {
+  @media screen and (max-width: 768px) {
     top: 6rem;
+    font-size: 60px;
+  }
+
+  @media screen and (max-width: 430px) {
+    left: 54%;
+    top: 3rem;
   }
 
   .first-word {
@@ -71,6 +97,10 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    @media screen and (max-width: 768px) {
+      font-size: 6rem;
+    }
 
     @media screen and (max-width: 430px) {
       font-size: 4rem;
@@ -94,12 +124,12 @@
 
 .copy-banner {
   width: 100%;
-  margin: -8.9rem auto 0;
+  margin: -9.5rem auto 0;
   position: relative;
   z-index: 200;
-  min-height: 9rem;
-  background-color: var(--banner-color);
-  padding: 1rem 3rem;
+  /* min-height: 9rem; */
+  background-color: var(--banner-color-faded);
+  padding: 2rem 3rem;
   text-align: center;
   line-height: 1.75;
   font-weight: 300;
@@ -108,28 +138,34 @@
   @media screen and (max-width: 768px) {
     padding-left: 2rem;
     padding-right: 2rem;
+    margin-top: -19rem;
   }
 
   @media screen and (max-width: 556px) {
     padding-left: 1rem;
     padding-right: 1rem;
+    margin-top: -7rem;
+    background-color: var(--banner-color);
   }
 
   @media screen and (max-width: 430px) {
     margin-top: -8rem;
     padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 15px;
   }
 }
 
 p {
   width: var(--wrapper-width);
   color: var(--color-primary);
-  color: rgba(255, 255, 255, 0.605);
   margin: 0 auto;
   font-size: 17px;
   font-weight: 300;
   @media screen and (max-width: 430px) {
     font-weight: 300;
+    font-size: 15px;
+    opacity: 0.8;
   }
 }
 </style>

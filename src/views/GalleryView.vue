@@ -10,6 +10,9 @@ import PageHeading from "@/components/PageHeading.vue";
 </script>
 
 <style lang="scss" scoped>
+.page-wrapper {
+  min-height: calc(100vh - 22rem);
+}
 h2 {
   margin-top: 10rem;
   text-align: center;

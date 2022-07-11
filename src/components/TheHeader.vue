@@ -10,10 +10,13 @@
       </RouterLink>
       <ul v-if="showMenu" class="navlink-container">
         <li class="navlink">
-          <RouterLink to="/shows">Shows</RouterLink>
+          <RouterLink to="/">Home</RouterLink>
         </li>
         <li class="navlink">
-          <RouterLink to="/about">About</RouterLink>
+          <a @click="scrollTo('shows')">Shows</a>
+        </li>
+        <li class="navlink">
+          <a @click="scrollTo('about')">About</a>
         </li>
         <li class="navlink">
           <RouterLink to="/gallery">Gallery</RouterLink>
@@ -26,7 +29,7 @@
             href="https://www.facebook.com/Whiskey-Midnight-103502742358240"
             target="_blank"
             rel="noreferrer"
-            ><i class="fa-brands fa-facebook"></i
+            ><i class="fab fa-facebook"></i
           ></a>
         </li>
       </ul>
@@ -37,12 +40,13 @@
 
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted, watch } from "vue";
-import { RouterLink, useRoute } from "vue-router";
+import { RouterLink, useRoute, useRouter } from "vue-router";
 
 const showMenu = ref(true);
 const windowWidth = ref(window.innerWidth);
 
 const route = useRoute();
+const router = useRouter();
 
 watch(
   () => route.path,
@@ -69,6 +73,20 @@ function onResize(): void {
 
 function toggleMenu(): void {
   showMenu.value = !showMenu.value;
+}
+
+async function scrollTo(section: string): Promise<void> {
+  if (route.name === "home") {
+    window.location.hash = "";
+    window.location.hash = `#${section}Section`;
+    if (windowWidth.value < 769) showMenu.value = false;
+  } else {
+    await router.push("/");
+    window.location.hash = "";
+    window.location.hash = `#${section}Section`;
+    router.replace("/");
+    showMenu.value = false;
+  }
 }
 </script>
 
@@ -142,57 +160,15 @@ nav {
     width: 10rem;
     display: block;
   }
+  @media screen and (max-width: 430px) {
+    top: 3.95rem;
+    width: 12rem;
+    display: block;
+  }
 
-  .navlink {
-    position: relative;
-    height: 100%;
-    letter-spacing: 2px;
-    font-weight: 300;
-    font-size: 17px;
-    text-align: right;
-
-    &:hover a {
-      opacity: 1;
-    }
-
-    a {
-      display: inline-block;
-      padding: 10px 35px;
-      opacity: 0.7;
-      color: var(--color-primary);
-      transition: opacity 0.3s;
-
-      @media screen and (max-width: 768px) {
-        padding: 15px 35px;
-      }
-    }
-
-    .router-link-active {
-      position: relative;
-      opacity: 1;
-
-      &:after {
-        position: absolute;
-        content: "";
-        top: 35px;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 9999999;
-        height: 2px;
-        width: 60%;
-        background-color: var(--orange);
-        @media screen and (max-width: 768px) {
-          right: 35px;
-          left: initial;
-          top: 38px;
-          transform: initial;
-        }
-      }
-    }
-
-    &.fb {
-      font-size: 25px;
-    }
+  .fa-facebook {
+    font-size: 1.5rem;
+    color: var(--color-primary);
   }
 }
 
