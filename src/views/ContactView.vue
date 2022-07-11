@@ -4,13 +4,13 @@
     <div class="container">
       <div class="content">
         <form
-          name="contact-form"
+          name="contact"
           class="contactForm"
           method="post"
           netlify
           data-netlify-honeypot="bot-field"
         >
-          <input type="hidden" name="form-name" value="contact-form" />
+          <input type="hidden" name="form-name" value="contact" />
           <InputGroup>
             <FormLabel>What is your name/venue?</FormLabel>
             <TextInput v-model="contactForm.name" name="name" required />

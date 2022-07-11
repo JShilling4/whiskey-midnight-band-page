@@ -191,7 +191,7 @@ import PageHeading from "@/components/PageHeading.vue";
       } */
     }
 
-    tr:not(:last-child) td {
+    tr:last-child td {
       border-bottom: none;
 
       @media screen and (max-width: 430px) {
