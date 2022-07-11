@@ -47,12 +47,11 @@ import ShowsView from "@/views/ShowsView.vue";
 
   @media screen and (max-width: 1024px) {
     height: 950px;
-    background-size: cover;
+    background-attachment: scroll;
   }
 
   @media screen and (max-width: 768px) {
     height: 800px;
-    background-attachment: scroll;
   }
 
   @media screen and (max-width: 556px) {
@@ -94,6 +93,8 @@ import ShowsView from "@/views/ShowsView.vue";
     font-size: 7rem;
     color: var(--orange);
     background: linear-gradient(#ebae58, var(--orange), var(--orange));
+    background-repeat: no-repeat;
+    background-origin: content-box;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -109,6 +110,8 @@ import ShowsView from "@/views/ShowsView.vue";
   .second-word {
     color: #fff;
     background: var(--text-gradient-primary);
+    background-repeat: no-repeat;
+    background-origin: content-box;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -135,6 +138,10 @@ import ShowsView from "@/views/ShowsView.vue";
   font-weight: 300;
   border-top: 3px solid var(--color-secondary);
 
+  @media screen and (max-width: 1024px) {
+    background-color: var(--banner-color);
+  }
+
   @media screen and (max-width: 768px) {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -145,7 +152,6 @@ import ShowsView from "@/views/ShowsView.vue";
     padding-left: 1rem;
     padding-right: 1rem;
     margin-top: -7rem;
-    background-color: var(--banner-color);
   }
 
   @media screen and (max-width: 430px) {
