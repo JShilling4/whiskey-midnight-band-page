@@ -85,12 +85,16 @@ import PageHeading from "@/components/PageHeading.vue";
 
 <style lang="scss" scoped>
 .view-container {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)),
     url("@/assets/images/band-setup.jpg");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
   padding-top: 6rem;
+
+  @media screen and (max-width: 1024px) {
+    background-attachment: scroll;
+  }
 }
 
 .table-wrapper {
@@ -142,7 +146,7 @@ import PageHeading from "@/components/PageHeading.vue";
       @media screen and (max-width: 768px) {
         margin-bottom: 5rem;
       }
-      background-color: rgba(0, 0, 0, 0.6);
+      background-color: rgba(0, 0, 0, 0.7);
     }
 
     th {
@@ -192,7 +196,7 @@ import PageHeading from "@/components/PageHeading.vue";
     }
 
     tr:last-child td {
-      border-bottom: none;
+      /* border-bottom: none; */
 
       @media screen and (max-width: 430px) {
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
