@@ -51,7 +51,7 @@ import ShowsView from "@/views/ShowsView.vue";
   }
 
   @media screen and (max-width: 768px) {
-    height: 900px;
+    height: 800px;
     background-attachment: scroll;
   }
 
@@ -138,7 +138,7 @@ import ShowsView from "@/views/ShowsView.vue";
   @media screen and (max-width: 768px) {
     padding-left: 2rem;
     padding-right: 2rem;
-    margin-top: -19rem;
+    margin-top: -16rem;
   }
 
   @media screen and (max-width: 556px) {
