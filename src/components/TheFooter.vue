@@ -3,7 +3,7 @@
     <div class="content-wrapper">
       <i class="fab fa-facebook icon"></i>
       <ul>
-        <li class="navlink"><a href="#aboutSection">About</a></li>
+        <li class="navlink"><a @click="scrollTo('about')">About</a></li>
         <li class="navlink"><RouterLink to="/gallery">Gallery</RouterLink></li>
         <li class="navlink"><RouterLink to="/contact">Contact</RouterLink></li>
       </ul>
@@ -20,7 +20,22 @@
 </template>
 
 <script setup lang="ts">
-import { RouterLink } from "vue-router";
+import { RouterLink, useRoute, useRouter } from "vue-router";
+
+const route = useRoute();
+const router = useRouter();
+
+async function scrollTo(section: string): Promise<void> {
+  if (route.name === "home") {
+    window.location.hash = "";
+    window.location.hash = `#${section}Section`;
+  } else {
+    await router.push("/");
+    window.location.hash = "";
+    window.location.hash = `#${section}Section`;
+    router.replace("/");
+  }
+}
 </script>
 
 <style lang="scss">
