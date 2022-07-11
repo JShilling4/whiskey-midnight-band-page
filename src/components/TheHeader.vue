@@ -85,7 +85,7 @@ async function scrollTo(section: string): Promise<void> {
     window.location.hash = "";
     window.location.hash = `#${section}Section`;
     router.replace("/");
-    showMenu.value = false;
+    if (windowWidth.value < 769) showMenu.value = false;
   }
 }
 </script>
