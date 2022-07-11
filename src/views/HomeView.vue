@@ -46,6 +46,7 @@ import ShowsView from "@/views/ShowsView.vue";
   background-attachment: fixed;
 
   @media screen and (max-width: 1024px) {
+    display: block;
     height: 950px;
     background-attachment: scroll;
   }
@@ -76,8 +77,16 @@ import ShowsView from "@/views/ShowsView.vue";
   font-weight: 400;
   z-index: 99999999;
 
+  @media screen and (max-width: 1024px) {
+    position: static;
+    transform: initial;
+    padding: 6rem 0 0 7rem;
+  }
+
   @media screen and (max-width: 768px) {
     top: 6rem;
+    padding-left: 2rem;
+    padding-top: 4rem;
     font-size: 60px;
   }
 
