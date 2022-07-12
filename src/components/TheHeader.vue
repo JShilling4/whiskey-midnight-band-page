@@ -67,7 +67,6 @@ onUnmounted((): void => {
 
 function onResize(): void {
   windowWidth.value = window.innerWidth;
-  console.log(window.innerWidth);
   windowWidth.value >= 769 ? (showMenu.value = true) : (showMenu.value = false);
 }
 

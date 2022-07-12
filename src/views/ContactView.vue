@@ -50,10 +50,6 @@ const contactForm = ref({
   email: null,
   message: null,
 });
-
-// function onFormSubmit() {
-//   alert("submitted");
-// }
 </script>
 
 <style lang="scss" scoped>
@@ -68,10 +64,8 @@ h2 {
   margin: 0 auto;
   .copy {
     font-family: Roboto;
-    /* width: var(--wrapper-width); */
     margin: 0 auto;
-    /* padding: 0 8rem; */
-    width: 70%;
+    width: 75%;
     line-height: 1.75;
     font-size: 18px;
     color: var(--copy-white-faded);
