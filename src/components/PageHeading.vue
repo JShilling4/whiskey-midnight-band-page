@@ -15,6 +15,7 @@ h1 {
   letter-spacing: 1px;
   font-size: 38px;
   margin-bottom: 3rem;
+  font-family: Roboto, sans-serif;
 
   @media screen and (max-width: 768px) {
     font-size: 30px;
