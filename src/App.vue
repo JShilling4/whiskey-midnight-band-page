@@ -21,7 +21,7 @@ import { RouterView } from "vue-router";
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: Verdana, sans-serif;
 }
 
 ul {

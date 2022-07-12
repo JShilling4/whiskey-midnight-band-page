@@ -1,15 +1,24 @@
 <template>
   <footer>
     <div class="content-wrapper">
-      <i class="fab fa-facebook icon"></i>
-      <ul>
-        <li class="navlink"><a @click="scrollTo('about')">About</a></li>
-        <li class="navlink"><RouterLink to="/gallery">Gallery</RouterLink></li>
-        <li class="navlink"><RouterLink to="/contact">Contact</RouterLink></li>
-      </ul>
+      <div class="top-bar">
+        <i class="fab fa-facebook icon"></i>
+        <ul>
+          <li class="navlink">
+            <RouterLink to="/">Home</RouterLink>
+          </li>
+          <li class="navlink"><a @click="scrollTo('about')">About</a></li>
+          <li class="navlink">
+            <RouterLink to="/gallery">Gallery</RouterLink>
+          </li>
+          <li class="navlink">
+            <RouterLink to="/contact">Contact</RouterLink>
+          </li>
+        </ul>
+        <p>Booking/Info: <span>redcabin44@gmail.com</span></p>
+      </div>
 
       <div class="bottom-bar">
-        <p>Booking/Info: <span>redcabin44@gmail.com</span></p>
         <p>
           &copy; {{ new Date().getFullYear() }} All Rights Reserved - Whiskey
           Midnight
@@ -59,30 +68,46 @@ footer {
     padding: 1rem 0 1rem;
   }
 
-  .bottom-bar {
-    background-color: var(--color-primary);
-    padding: 1rem 0 2rem;
-    color: var(--banner-color);
-
-    p:first-child {
+  .top-bar {
+    padding-bottom: 1rem;
+    p {
       margin-bottom: 1rem;
       font-weight: 500;
+      font-size: 12px;
+      color: var(--color-primary-faded);
+      span {
+        color: var(--orange-faded);
+      }
+    }
+  }
+
+  .bottom-bar {
+    background-color: var(--color-secondary);
+    padding: 1rem 0 1rem;
+    color: var(--color-primary);
+
+    p {
+      /* margin-bottom: 1rem; */
+      font-weight: 500;
+      font-size: 12px;
 
       span {
         color: var(--orange);
       }
     }
-    p:last-child {
-      font-size: 12px;
-    }
   }
 }
 
-.navlink {
+footer .navlink {
   font-size: 14px !important;
+  letter-spacing: 0.5px !important;
 
-  /* a {
+  a {
     padding: 10px 25px !important;
-  } */
+
+    @media screen and (max-width: 430px) {
+      padding: 10px 15px !important;
+    }
+  }
 }
 </style>

@@ -1,9 +1,11 @@
 :root {
   --text-gradient-primary: linear-gradient(#fff, rgba(135, 134, 129) 15%, #fff);
   --color-primary: rgba(239, 215, 162, 0.9);
+  --color-primary-faded: rgba(239, 215, 162, 0.7);
   --color-tertiary: rgb(145, 111, 35);
   --color-secondary: rgb(110, 84, 27);
   --orange: rgb(240, 115, 12);
+  --orange-faded: rgba(240, 115, 12, 0.7);
   --bg-black: #050505;
   --bg-primary: rgb(44, 24, 8);
   --bg-secondary: rgb(79, 53, 31);
@@ -11,6 +13,7 @@
   --banner-color-faded: rgba(28, 17, 9, 0.6);
   --input-bg-color: rgba(239, 215, 162, 0.9);
   --input-border-radius: 10px;
+  --copy-white-faded: rgba(255, 255, 255, 0.808);
 
   --wrapper-width: 1129px;
 

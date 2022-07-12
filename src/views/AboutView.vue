@@ -67,6 +67,7 @@ import PageHeading from "@/components/PageHeading.vue";
   line-height: 2;
   font-weight: 300;
   margin-bottom: 3rem;
+  color: rgba(255, 255, 255, 0.856);
 
   @media screen and (max-width: 430px) {
     margin-bottom: 1rem;
@@ -111,6 +112,7 @@ import PageHeading from "@/components/PageHeading.vue";
     .answer {
       font-weight: 300;
       line-height: 1.75;
+      color: var(--copy-white-faded);
     }
   }
 }
