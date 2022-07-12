@@ -61,11 +61,12 @@ a {
 }
 
 .navlink {
+  font-family: Roboto, sans-serif;
   position: relative;
   height: 100%;
   letter-spacing: 2px;
   font-weight: 300;
-  font-size: 17px;
+  font-size: 16px;
   text-align: right;
   cursor: pointer;
 

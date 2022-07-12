@@ -1,7 +1,12 @@
 <template>
   <div class="page-wrapper">
-    <PageHeading>Contact</PageHeading>
+    <PageHeading>Contact Us</PageHeading>
     <div class="container">
+      <p class="copy">
+        Please feel free to use our form below if you have any questions or
+        comments. You can also reach us at <span>redcabin44@gmail.com</span> for
+        booking & info.
+      </p>
       <div class="content">
         <form
           name="contact"
@@ -12,11 +17,11 @@
         >
           <input type="hidden" name="form-name" value="contact" />
           <InputGroup>
-            <FormLabel>What is your name/venue?</FormLabel>
+            <FormLabel>Name</FormLabel>
             <TextInput v-model="contactForm.name" name="name" required />
           </InputGroup>
           <InputGroup>
-            <FormLabel>How can we contact you?</FormLabel>
+            <FormLabel>Email or phone number</FormLabel>
             <TextInput v-model="contactForm.email" name="email" required />
           </InputGroup>
           <InputGroup>
@@ -61,6 +66,26 @@ h2 {
 .container {
   max-width: var(--wrapper-width);
   margin: 0 auto;
+  .copy {
+    font-family: Roboto;
+    /* width: var(--wrapper-width); */
+    margin: 0 auto;
+    /* padding: 0 8rem; */
+    width: 70%;
+    line-height: 1.75;
+    font-size: 18px;
+    color: var(--copy-white-faded);
+
+    @media screen and (max-width: 556px) {
+      width: 98%;
+      font-size: 15px;
+    }
+
+    span {
+      color: var(--orange);
+      font-weight: 500;
+    }
+  }
 }
 
 .heading-container {
@@ -98,6 +123,12 @@ h2 {
     @media screen and (max-width: 400px) {
       width: 100%;
     }
+  }
+}
+
+.page-wrapper {
+  @media screen and (max-width: 1024px) {
+    padding-bottom: 8rem;
   }
 }
 </style>

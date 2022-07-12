@@ -142,6 +142,7 @@ import PageHeading from "@/components/PageHeading.vue";
 
     tr {
       margin-bottom: 2rem;
+      border: 5px solid var(--color-secondary);
       background-color: var(--banner-color);
       @media screen and (max-width: 768px) {
         display: flex;

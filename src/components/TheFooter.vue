@@ -84,7 +84,7 @@ footer {
   .bottom-bar {
     background-color: var(--color-secondary);
     padding: 1rem 0 1rem;
-    color: var(--color-primary);
+    color: var(--color-primary-faded);
 
     p {
       /* margin-bottom: 1rem; */

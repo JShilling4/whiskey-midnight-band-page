@@ -39,7 +39,7 @@ import ShowsView from "@/views/ShowsView.vue";
   z-index: 1;
   height: 900px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)),
-    url("@/assets/images/IMG_3438.JPG");
+    url("@/assets/images/stage-main.jpg");
   background-size: cover;
   background-position: center -50px;
   background-repeat: no-repeat;

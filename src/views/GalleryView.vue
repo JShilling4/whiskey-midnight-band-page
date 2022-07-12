@@ -5,15 +5,14 @@
       <h2>Photos</h2>
       <div class="row">
         <div class="column">
-          <img src="@/assets/images/IMG_3438.jpg" />
-          <img src="@/assets/images/both-guitars-crp.jpg" />
-        </div>
-        <div class="column">
-          <img src="@/assets/images/band-setup.jpg" />
-          <img src="@/assets/images/both-stage2.jpg" />
-        </div>
-        <div class="column">
           <img src="@/assets/images/road.jpg" />
+          <img src="@/assets/images/band-setup.jpg" />
+        </div>
+        <div class="column">
+          <img src="@/assets/images/both-stage1.jpg" />
+        </div>
+        <div class="column">
+          <img src="@/assets/images/both-guitars-crp.jpg" />
         </div>
       </div>
     </section>
@@ -49,8 +48,17 @@ section {
 }
 h2 {
   font-weight: 500;
-
   margin: 0 0 2rem;
+  position: relative;
+  &:after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 6rem;
+    left: 0;
+    bottom: -10px;
+    background-color: var(--orange);
+  }
 }
 .row {
   display: flex;
