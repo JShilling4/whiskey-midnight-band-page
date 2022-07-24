@@ -10,9 +10,17 @@
         </div>
         <div class="column">
           <img src="@/assets/images/both-stage1.jpg" />
+          <img
+            src="@/assets/images/bar13-flyer-081322.jpg"
+            alt="Bar13 live show on August 13th, 2022"
+          />
         </div>
         <div class="column">
           <img src="@/assets/images/both-guitars-crp.jpg" />
+          <img
+            src="@/assets/images/lakelife-flyer-082722.jpg"
+            alt="Bar13 live show on August 13th, 2022"
+          />
         </div>
       </div>
     </section>
