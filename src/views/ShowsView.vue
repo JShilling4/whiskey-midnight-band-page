@@ -56,7 +56,7 @@
                   >Lakelife Bar & Grill</a
                 >
               </td>
-              <td width="200">7-10pm</td>
+              <td width="200">7:30-10:30pm</td>
               <td>Warsaw, IN</td>
               <td class="last" align="right">
                 <a
