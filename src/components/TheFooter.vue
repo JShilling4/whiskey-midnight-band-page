@@ -2,7 +2,12 @@
   <footer>
     <div class="content-wrapper">
       <div class="top-bar">
-        <i class="fab fa-facebook icon"></i>
+        <a
+          href="https://www.facebook.com/profile.php?id=100082719523304"
+          target="_blank"
+        >
+          <i class="fab fa-facebook icon"></i>
+        </a>
         <ul>
           <li class="navlink">
             <RouterLink to="/">Home</RouterLink>

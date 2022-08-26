@@ -4,18 +4,16 @@
 
     <div class="content-container">
       <p class="top-copy">
-        Welcome to Whiskey Midnight’s page. Thank you for taking the time to
-        learn about who we are and what we do. Wes Creekmore and Justin Shilling
-        began playing music together 10+ years ago and have been friends ever
-        since. Justin is a native of Syracuse, Indiana and has extensive studio
-        experience and began playing guitar at a young age. Wes was born and
-        raised in Pierceton, Indiana and was inspired to pick up the guitar from
-        his late father Charlie Creekmore. Wes has been influenced by many
-        styles but has a love for outlaw and retro country whereas Justin got
-        his start playing in bands primarily focused in the rock genre. This
-        makes for a great combination with the ability to cover many styles and
-        sounds. We hope you will join us at a show and become part of the
-        Whiskey Midnight fan base.
+        Wes Creekmore and Justin Shilling began playing music together 10+ years
+        ago and have been friends ever since. Justin is a native of Syracuse,
+        Indiana and has extensive studio experience and began playing guitar at
+        a young age. Wes was born and raised in Pierceton, Indiana and was
+        inspired to pick up the guitar from his late father Charlie Creekmore.
+        Wes has been influenced by many styles but has a love for outlaw and
+        retro country whereas Justin got his start playing in bands primarily
+        focused in the rock genre. This makes for a great combination with the
+        ability to cover many styles and sounds. We hope you will join us at a
+        show and become part of the Whiskey Midnight fan base.
       </p>
       <div class="hero-container">
         <img src="@/assets/images/road.jpg" alt="" />
@@ -47,10 +45,11 @@
             Doobie Brothers. You'll get some nostalgic 90's era alternative from
             Stone Temple Pilots, Sublime, Red Hot Chili Peppers & Bush. They'll
             kick up the energy level with some hard rock from artists like
-            Staind & Metallica. When it's time to relax with a drink you'll get
-            some blues from Hendrix, John Mayer & SRV. They have also been known
-            to bust out acoustic guitars and jam on some Jim Croce, Billy Joel &
-            Eric Church. To sum up, you're going to get some variety!
+            Staind, AC/DC & Metallica. When it's time to relax with a drink
+            you'll get some blues from Hendrix, John Mayer & SRV. They have also
+            been known to break out acoustic guitars and jam on some Jim Croce,
+            Billy Joel & Eric Church. To sum up, you're going to get some
+            variety!
           </p>
         </div>
       </div>
