@@ -69,6 +69,39 @@
             </tr>
           </tbody>
         </table>
+
+        <table class="shows-table">
+          <tbody>
+            <tr>
+              <td class="first" width="150">
+                <div class="date-container">
+                  <div class="date-container__text">
+                    <span class="month">SEP </span>
+                    <span class="day">3</span>
+                  </div>
+                </div>
+              </td>
+              <td width="250" class="venue-name">
+                <a
+                  href="https://piercetonjellystone.com/weekend-activities/"
+                  target="_blank"
+                  referrerpolicy="no-referrer"
+                  >Jellystone Park</a
+                >
+              </td>
+              <td width="200">8-11pm</td>
+              <td>Pierceton, IN</td>
+              <td class="last" align="right">
+                <!-- <a
+                  href="https://www.facebook.com/events/345714774392893?acontext=%7B%22event_action_history%22%3A[%7B%22surface%22%3A%22page%22%7D]%7D"
+                  target="_blank"
+                  referrerpolicy="no-referrer"
+                  ><i class="fab fa-facebook"></i
+                ></a> -->
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
