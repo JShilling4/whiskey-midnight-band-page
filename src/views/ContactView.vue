@@ -8,15 +8,8 @@
         booking & info.
       </p>
       <div class="content">
-        <form
-          name="contact-form"
-          class="contactForm"
-          method="post"
-          netlify
-          data-netlify-honeypot="bot-field"
-        >
+        <form name="contact-form" class="contactForm" method="post" netlify>
           <input type="hidden" name="form-name" value="contact-form" />
-          <input class="hidden" name="bot-field" />
           <InputGroup>
             <FormLabel>Name</FormLabel>
             <TextInput v-model="contactForm.name" name="name" required />
