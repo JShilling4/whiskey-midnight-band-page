@@ -15,7 +15,8 @@
           netlify
           data-netlify-honeypot="bot-field"
         >
-          <input class="hidden" type="hidden" name="bot-field" />
+          <input type="hidden" name="form-name" value="contact-form" />
+          <input class="hidden" name="bot-field" />
           <InputGroup>
             <FormLabel>Name</FormLabel>
             <TextInput v-model="contactForm.name" name="name" required />
