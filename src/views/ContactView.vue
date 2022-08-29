@@ -9,13 +9,13 @@
       </p>
       <div class="content">
         <form
-          name="contact"
+          name="contact-form"
           class="contactForm"
           method="post"
           netlify
           data-netlify-honeypot="bot-field"
         >
-          <input type="hidden" name="form-name" value="contact" />
+          <input class="hidden" type="hidden" name="bot-field" />
           <InputGroup>
             <FormLabel>Name</FormLabel>
             <TextInput v-model="contactForm.name" name="name" required />
@@ -124,5 +124,9 @@ h2 {
   @media screen and (max-width: 1024px) {
     padding-bottom: 8rem;
   }
+}
+
+.hidden {
+  display: none;
 }
 </style>
