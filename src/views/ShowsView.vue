@@ -4,72 +4,6 @@
 
     <div class="shows-container">
       <div class="table-wrapper">
-        <!-- <table class="shows-table">
-          <tbody>
-            <tr>
-              <td class="first" width="150">
-                <div class="date-container">
-                  <div class="date-container__text">
-                    <span class="month">AUG </span>
-                    <span class="day">13</span>
-                  </div>
-                </div>
-              </td>
-              <td width="250" class="venue-name">
-                <a
-                  href="https://www.facebook.com/bar13Pierceton"
-                  target="_blank"
-                  referrerpolicy="no-referrer"
-                  >Bar 13</a
-                >
-              </td>
-              <td width="200">8-11pm</td>
-              <td>Pierceton, IN</td>
-              <td class="last" align="right">
-                <a
-                  href="https://www.facebook.com/events/568412051390453/?ref=newsfeed"
-                  target="_blank"
-                  referrerpolicy="no-referrer"
-                  ><i class="fab fa-facebook"></i
-                ></a>
-              </td>
-            </tr>
-          </tbody>
-        </table> -->
-
-        <!-- <table class="shows-table">
-          <tbody>
-            <tr>
-              <td class="first" width="150">
-                <div class="date-container">
-                  <div class="date-container__text">
-                    <span class="month">AUG </span>
-                    <span class="day">27</span>
-                  </div>
-                </div>
-              </td>
-              <td width="250" class="venue-name">
-                <a
-                  href="https://www.facebook.com/lakelifebarandgrill"
-                  target="_blank"
-                  referrerpolicy="no-referrer"
-                  >Lakelife Bar & Grill</a
-                >
-              </td>
-              <td width="200">7:30-10:30pm</td>
-              <td>Warsaw, IN</td>
-              <td class="last" align="right">
-                <a
-                  href="https://www.facebook.com/events/345714774392893?acontext=%7B%22event_action_history%22%3A[%7B%22surface%22%3A%22page%22%7D]%7D"
-                  target="_blank"
-                  referrerpolicy="no-referrer"
-                  ><i class="fab fa-facebook"></i
-                ></a>
-              </td>
-            </tr>
-          </tbody>
-        </table> -->
-
         <ShowTable v-for="show in shows" :key="show.id" :show="show" />
       </div>
     </div>
@@ -82,21 +16,22 @@ import ShowTable from "@/components/ShowTable.vue";
 
 const shows = [
   {
-    id: 1,
+    id: 2,
     date: {
-      month: "SEP",
-      day: "3",
+      month: "NOV",
+      day: "23",
     },
     venue: {
-      name: "Jellystone Park",
-      website: "https://piercetonjellystone.com/weekend-activities/",
+      name: "American Legion",
+      website:
+        "https://www.facebook.com/Menzie-Reece-American-Legion-Post-258-PiercetonIN-146925249081400/",
     },
-    time: "8-11pm",
+    time: "6:00 pm",
     location: "Pierceton, IN",
     eventLink: null,
   },
   {
-    id: 2,
+    id: 3,
     date: {
       month: "NOV",
       day: "25",
@@ -105,7 +40,7 @@ const shows = [
       name: "Bar 13",
       website: "https://www.facebook.com/bar13Pierceton",
     },
-    time: "Time to be determined",
+    time: "9:00 pm",
     location: "Pierceton, IN",
     eventLink: null,
   },

@@ -17,6 +17,7 @@
         <div class="column">
           <img src="@/assets/images/both-guitars-crp.jpg" />
           <img src="@/assets/images/bar13/081322/bar13-81322-3.jpg" />
+          <img src="@/assets/images/lakelife/082722/lakelife-82722-1.jpg" />
         </div>
         <div class="column">
           <img src="@/assets/images/bar13/081322/bar13-81322-7.jpg" />
@@ -167,6 +168,12 @@ h2 {
 
 iframe {
   height: 315px;
+}
+
+.image-wrap {
+  object-fit: contain;
+  width: 300px;
+  height: 300px;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
