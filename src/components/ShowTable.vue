@@ -121,8 +121,10 @@ defineProps<{
     &.venue-name a {
       color: var(--color-primary);
       font-weight: 500;
+      text-decoration: underline;
+      transition: opacity 0.3s;
       &:hover {
-        text-decoration: underline;
+        opacity: 0.7;
       }
     }
   }

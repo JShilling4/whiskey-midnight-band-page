@@ -15,33 +15,48 @@ import PageHeading from "@/components/PageHeading.vue";
 import ShowTable from "@/components/ShowTable.vue";
 
 const shows = [
+  // {
+  //   id: 2,
+  //   date: {
+  //     month: "NOV",
+  //     day: "23",
+  //   },
+  //   venue: {
+  //     name: "American Legion",
+  //     website:
+  //       "https://www.facebook.com/Menzie-Reece-American-Legion-Post-258-PiercetonIN-146925249081400/",
+  //   },
+  //   time: "6:00 pm",
+  //   location: "Pierceton, IN",
+  //   eventLink: null,
+  // },
+  // {
+  //   id: 3,
+  //   date: {
+  //     month: "NOV",
+  //     day: "25",
+  //   },
+  //   venue: {
+  //     name: "Bar 13",
+  //     website: "https://www.facebook.com/bar13Pierceton",
+  //   },
+  //   time: "9:00 pm",
+  //   location: "Pierceton, IN",
+  //   eventLink: null,
+  // },
   {
-    id: 2,
+    id: 4,
     date: {
-      month: "NOV",
-      day: "23",
+      month: "DEC",
+      day: "17",
     },
     venue: {
-      name: "American Legion",
+      name: "Someplace Else Saloon",
       website:
-        "https://www.facebook.com/Menzie-Reece-American-Legion-Post-258-PiercetonIN-146925249081400/",
+        "https://www.facebook.com/people/Someplace-Else-Saloon/100063630880674/",
     },
-    time: "6:00 pm",
-    location: "Pierceton, IN",
-    eventLink: null,
-  },
-  {
-    id: 3,
-    date: {
-      month: "NOV",
-      day: "25",
-    },
-    venue: {
-      name: "Bar 13",
-      website: "https://www.facebook.com/bar13Pierceton",
-    },
-    time: "9:00 pm",
-    location: "Pierceton, IN",
+    time: "TBD",
+    location: "Claypool, IN",
     eventLink: null,
   },
 ];
