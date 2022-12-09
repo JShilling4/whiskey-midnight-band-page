@@ -1,20 +1,12 @@
 <template>
-  <div class="body-wrapper">
+  <div class="app">
     <TheHeader />
-    <RouterView />
+    <NuxtPage />
     <TheFooter />
   </div>
 </template>
 
-<script setup lang="ts">
-import TheHeader from "@/components/TheHeader.vue";
-import TheFooter from "@/components/TheFooter.vue";
-import { RouterView } from "vue-router";
-</script>
-
 <style lang="scss">
-@import "sass/styles";
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -31,6 +23,10 @@ ul {
 a {
   color: #fff;
   text-decoration: none;
+}
+
+.app {
+  background-color: var(--bg-primary);
 }
 
 .page-wrapper {

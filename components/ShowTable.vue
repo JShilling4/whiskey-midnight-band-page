@@ -10,7 +10,7 @@
             </div>
           </div>
         </td>
-        <td width="250" class="venue-name">
+        <td width="350" class="venue-name">
           <a
             :href="show.venue.website"
             target="_blank"

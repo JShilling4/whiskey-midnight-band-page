@@ -14,19 +14,28 @@
       hit the dance floor, Whiskey Midnight has a great show planned for you.
     </p>
   </div>
-
-  <div id="aboutSection">
-    <AboutView />
-  </div>
-
   <div id="showsSection">
     <ShowsView />
   </div>
 </template>
 
 <script setup lang="ts">
-import AboutView from "@/views/AboutView.vue";
-import ShowsView from "@/views/ShowsView.vue";
+import ShowsView from "@/components/ShowsView.vue";
+
+const title = ref("Whiskey Midnight");
+const description = ref(
+  "Whiskey Midnight is a duo of long-time musicians Wes Creekmore and Justin Shilling. Performing with the sound and energy of a full band, they cover music from many genres and time periods to provide an exciting lineup of songs."
+);
+
+useHead({
+  title,
+  meta: [
+    {
+      name: "description",
+      content: description,
+    },
+  ],
+});
 </script>
 
 <style lang="scss" scoped>
@@ -182,5 +191,14 @@ p {
     font-size: 15px;
     opacity: 0.8;
   }
+}
+
+#aboutSection {
+  background: radial-gradient(
+    var(--bg-secondary),
+    var(--bg-secondary),
+    var(--bg-primary)
+  );
+  background-size: cover;
 }
 </style>

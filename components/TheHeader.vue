@@ -16,7 +16,7 @@
           <a @click="scrollTo('shows')">Shows</a>
         </li>
         <li class="navlink">
-          <a @click="scrollTo('about')">About</a>
+          <RouterLink to="/about">About</RouterLink>
         </li>
         <li class="navlink">
           <RouterLink to="/gallery">Gallery</RouterLink>

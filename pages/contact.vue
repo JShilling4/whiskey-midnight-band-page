@@ -44,6 +44,21 @@ const contactForm = ref({
   email: null,
   message: null,
 });
+
+const title = ref("Whiskey Midnight - Contact");
+const description = ref(
+  "Contact Whiskey Midnight using this form or the provided email address for questions, booking and information."
+);
+
+useHead({
+  title,
+  meta: [
+    {
+      name: "description",
+      content: description,
+    },
+  ],
+});
 </script>
 
 <style lang="scss" scoped>

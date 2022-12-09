@@ -59,6 +59,21 @@
 
 <script setup lang="ts">
 import PageHeading from "@/components/PageHeading.vue";
+
+const title = ref("Whiskey Midnight - About");
+const description = ref(
+  "Whiskey Midnight is a duo of long-time musicians Wes Creekmore and Justin Shilling. Performing with the sound and energy of a full band, they cover music from many genres and time periods to provide an exciting lineup of songs."
+);
+
+useHead({
+  title,
+  meta: [
+    {
+      name: "description",
+      content: description,
+    },
+  ],
+});
 </script>
 
 <style lang="scss" scoped>
