@@ -1,6 +1,6 @@
 <template>
   <div class="view-container">
-    <PageHeading>Upcoming Shows</PageHeading>
+    <PageHeading>2022 Shows</PageHeading>
 
     <div class="shows-container">
       <div class="table-wrapper">
@@ -15,37 +15,79 @@ import PageHeading from "@/components/PageHeading.vue";
 import ShowTable from "@/components/ShowTable.vue";
 
 const shows = [
-  // {
-  //   id: 2,
-  //   date: {
-  //     month: "NOV",
-  //     day: "23",
-  //   },
-  //   venue: {
-  //     name: "American Legion",
-  //     website:
-  //       "https://www.facebook.com/Menzie-Reece-American-Legion-Post-258-PiercetonIN-146925249081400/",
-  //   },
-  //   time: "6:00 pm",
-  //   location: "Pierceton, IN",
-  //   eventLink: null,
-  // },
-  // {
-  //   id: 3,
-  //   date: {
-  //     month: "NOV",
-  //     day: "25",
-  //   },
-  //   venue: {
-  //     name: "Bar 13",
-  //     website: "https://www.facebook.com/bar13Pierceton",
-  //   },
-  //   time: "9:00 pm",
-  //   location: "Pierceton, IN",
-  //   eventLink: null,
-  // },
+  {
+    id: 1,
+    date: {
+      month: "AUG",
+      day: "13",
+    },
+    venue: {
+      name: "Bar 13",
+      website: "https://www.facebook.com/bar13Pierceton/",
+    },
+    time: "8:00 pm",
+    location: "Pierceton, IN",
+    eventLink: null,
+  },
+  {
+    id: 2,
+    date: {
+      month: "AUG",
+      day: "27",
+    },
+    venue: {
+      name: "Lakelife Bar & Grill",
+      website: "https://lakelifebarandgrill.com/",
+    },
+    time: "7:30 pm",
+    location: "Barbee Lakes, IN",
+    eventLink: null,
+  },
+  {
+    id: 3,
+    date: {
+      month: "SEP",
+      day: "3",
+    },
+    venue: {
+      name: "Jellystone Campgrounds",
+      website: "https://www.facebook.com/YBMCPierceton",
+    },
+    time: "8:00 pm",
+    location: "Pierceton, IN",
+    eventLink: null,
+  },
   {
     id: 4,
+    date: {
+      month: "NOV",
+      day: "23",
+    },
+    venue: {
+      name: "American Legion",
+      website:
+        "https://www.facebook.com/Menzie-Reece-American-Legion-Post-258-PiercetonIN-146925249081400/",
+    },
+    time: "6:00 pm",
+    location: "Pierceton, IN",
+    eventLink: null,
+  },
+  {
+    id: 5,
+    date: {
+      month: "NOV",
+      day: "25",
+    },
+    venue: {
+      name: "Bar 13",
+      website: "https://www.facebook.com/bar13Pierceton",
+    },
+    time: "9:00 pm",
+    location: "Pierceton, IN",
+    eventLink: null,
+  },
+  {
+    id: 6,
     date: {
       month: "DEC",
       day: "17",
@@ -55,7 +97,7 @@ const shows = [
       website:
         "https://www.facebook.com/people/Someplace-Else-Saloon/100063630880674/",
     },
-    time: "TBD",
+    time: "7:00 pm",
     location: "Claypool, IN",
     eventLink: null,
   },

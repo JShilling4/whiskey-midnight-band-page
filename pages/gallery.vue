@@ -64,22 +64,6 @@
             allowfullscreen
           ></iframe>
         </div>
-        <!-- <div style="padding: 56.25% 0 0 0; position: relative">
-          <iframe
-            src="https://player.vimeo.com/video/729345636?h=e8717a0ae3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-            frameborder="0"
-            allow="autoplay; fullscreen; picture-in-picture"
-            allowfullscreen
-            style="
-              position: absolute;
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 100%;
-            "
-            title="Rehearsal Medley 1"
-          ></iframe>
-        </div> -->
       </div>
     </section>
   </div>
@@ -87,6 +71,21 @@
 
 <script setup lang="ts">
 import PageHeading from "@/components/PageHeading.vue";
+
+const title = ref("Whiskey Midnight - Gallery");
+const description = ref(
+  "Browse photos and videos from Whiskey Midnight's shows."
+);
+
+useHead({
+  title,
+  meta: [
+    {
+      name: "description",
+      content: description,
+    },
+  ],
+});
 </script>
 
 <style lang="scss" scoped>
