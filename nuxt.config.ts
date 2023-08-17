@@ -25,7 +25,7 @@ export default defineNuxtConfig({
     // SCSS file in the project
     "assets/sass/main.scss",
   ],
-  ssr: true,
+  ssr: false,
   modules: [
     ['@nuxtjs/robots', { configPath: "~/config/robots.config" }]
   ]
